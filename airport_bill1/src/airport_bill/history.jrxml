@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8f0b5711-5baf-4f94-aa73-39d5cddc1f3a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT  detail.d_id,owner.o_name,owner.o_surname,owner.o_nationality, owner.o_telephone,owner.o_p,owner.o_d,owner.o_v,airline, addition, seat, flight, price, date FROM detail INNER JOIN owner ON owner.o_id=detail.o_id;]]>
+	</queryString>
+	<field name="d_id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="o_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="o_surname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="o_nationality" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="o_telephone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="o_p" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="o_d" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="o_v" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="airline" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="addition" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="seat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="flight" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="price" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="28" splitType="Stretch">
+			<staticText>
+				<reportElement x="362" y="0" width="100" height="28" uuid="9122cac9-d8ba-4a1c-8085-fa705a788d3a"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[History]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="57" height="20" uuid="0752cd70-c713-42e9-adcf-9d84aa7be81f"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="57" y="0" width="57" height="20" uuid="cc267660-8e62-4dba-8853-fdb5e35d36a4"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="0" width="57" height="20" uuid="2fb8a25b-d303-4e14-9011-a181ce073ed9"/>
+				<text><![CDATA[Surname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="171" y="0" width="57" height="20" uuid="f436aa9d-368b-4470-b649-dc8f400615ce"/>
+				<text><![CDATA[Nationality]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="228" y="0" width="57" height="20" uuid="5af4eea1-6465-4acc-beaf-a1c33b11ec61"/>
+				<text><![CDATA[Telephone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="0" width="57" height="20" uuid="bf729480-328f-42b2-89fc-7133cbae419b"/>
+				<text><![CDATA[Province]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="0" width="57" height="20" uuid="1f1adb9d-5657-4457-9d6f-a76d68a130c3"/>
+				<text><![CDATA[District]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="399" y="0" width="57" height="20" uuid="b8df5afe-83ed-4a12-9f81-941e032b15c3"/>
+				<text><![CDATA[Village]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="456" y="0" width="57" height="20" uuid="96d3fa3d-e205-4b00-9abc-fa69d2a601f6"/>
+				<text><![CDATA[Airline]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="513" y="0" width="57" height="20" uuid="20f2ab70-f3e0-490e-87cd-3d7a66ae96f2"/>
+				<text><![CDATA[Addition]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="570" y="0" width="57" height="20" uuid="66d3cb4e-f8b0-4b7d-a80a-10cf660b2080"/>
+				<text><![CDATA[class]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="627" y="0" width="57" height="20" uuid="7275f643-90f6-4dd1-bd05-3779ae9e2e0f"/>
+				<text><![CDATA[flight]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="745" y="0" width="57" height="20" uuid="d6de6628-88eb-4ddf-bed4-0e176e16eb5a"/>
+				<text><![CDATA[price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="684" y="0" width="57" height="20" uuid="d5fe05fb-9270-4511-8c0b-065f1ce4b4cd"/>
+				<text><![CDATA[date]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-65" y="30" width="935" height="1" uuid="e4f1ebac-4b67-4bf0-8eca-40e2008e1e6c"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="37" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="57" height="20" uuid="99729d67-adcf-4dc9-802d-bc5d22aa1c23"/>
+				<textFieldExpression><![CDATA[$F{d_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="57" y="0" width="57" height="20" uuid="92893a59-d60a-4b4e-9e94-d27030661b78"/>
+				<textFieldExpression><![CDATA[$F{o_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="0" width="57" height="20" uuid="ad83180e-cef2-48e6-8607-e51faa980fc3"/>
+				<textFieldExpression><![CDATA[$F{o_surname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="171" y="0" width="57" height="20" uuid="8ba3677d-0990-4153-bfe1-92e371f3c2e5"/>
+				<textFieldExpression><![CDATA[$F{o_nationality}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="228" y="0" width="57" height="20" uuid="3389c9a2-1675-4c73-8b61-264a5e13f660"/>
+				<textFieldExpression><![CDATA[$F{o_telephone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="0" width="57" height="20" uuid="59ef00ef-97b6-43b7-9bb3-ea49503ad356"/>
+				<textFieldExpression><![CDATA[$F{o_p}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="342" y="0" width="57" height="20" uuid="32099076-49a2-406a-a42e-6dae81be86ff"/>
+				<textFieldExpression><![CDATA[$F{o_d}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="399" y="0" width="57" height="20" uuid="7b095652-0a34-408c-85f0-ceecd1f54373"/>
+				<textFieldExpression><![CDATA[$F{o_v}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="456" y="0" width="57" height="20" uuid="621854b8-cc2f-4d34-bd0c-d05faece31fa"/>
+				<textFieldExpression><![CDATA[$F{airline}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="513" y="0" width="57" height="20" uuid="65586cce-49e9-4370-adc7-3495992824cb"/>
+				<textFieldExpression><![CDATA[$F{addition}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="570" y="0" width="57" height="20" uuid="5a6ea2c1-ae9f-48d6-9097-5d0061335354"/>
+				<textFieldExpression><![CDATA[$F{seat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="627" y="0" width="57" height="20" uuid="744e316c-22de-4e7d-b7f2-4e5710133afc"/>
+				<textFieldExpression><![CDATA[$F{flight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="741" y="0" width="57" height="20" uuid="4ce0c3bb-71b5-4c7c-bb94-cb1ca4d8628a"/>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="684" y="0" width="57" height="20" uuid="d7207036-40d3-4855-b0c1-52f9ef109785"/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-20" y="20" width="842" height="1" uuid="4fc53f47-83e8-425f-a673-9c32951dbe0b"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

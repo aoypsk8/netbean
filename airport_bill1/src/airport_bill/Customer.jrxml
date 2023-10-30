@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="37f923de-3f97-4e9c-99c3-0c74c762f28a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from owner]]>
+	</queryString>
+	<field name="o_id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="o_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="o_surname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="o_nationality" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="o_telephone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="o_p" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="o_d" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="o_v" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="c_id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="8" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="335" y="0" width="100" height="35" uuid="b1e736d5-e4d5-4233-a592-2e5ea4d571a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20"/>
+				</textElement>
+				<text><![CDATA[Customer]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="89" height="20" uuid="501d22f1-0f31-4920-b54d-58d9b5b79741"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="89" y="0" width="138" height="20" uuid="7acc1656-4cca-436a-940a-c8ee0c8a36d8"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="227" y="0" width="119" height="20" uuid="c16019d2-5096-4e5a-a020-727920388df3"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Surname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="346" y="0" width="89" height="20" uuid="1fb8a9f1-c1bb-49d7-9a6d-98233a625e80"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Nationality]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="0" width="89" height="20" uuid="2e4d2f67-5602-4aa4-9cb7-fc9f778ff3d8"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Telephone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="524" y="0" width="89" height="20" uuid="74343ea7-a3f9-4295-8fb7-74342276ff39"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Province]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="613" y="0" width="89" height="20" uuid="703a3376-fa5b-4254-9103-5090f14d0a39"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Distric]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="702" y="0" width="100" height="20" uuid="281a5857-2ffd-4e78-849b-c25240b1dc59"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Village]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="89" height="20" uuid="807e7581-5239-4227-8d27-b4f45ca1ca5c"/>
+				<textFieldExpression><![CDATA[$F{o_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="89" y="0" width="138" height="20" uuid="762d78e7-2e1d-4b0a-b5f3-f2fecca3f19b"/>
+				<textFieldExpression><![CDATA[$F{o_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="227" y="0" width="119" height="20" uuid="59e0584b-4a1a-4b06-a457-6ecafcb84851"/>
+				<textFieldExpression><![CDATA[$F{o_surname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="346" y="0" width="89" height="20" uuid="12531353-bec5-4d23-b51d-13de65fa3aec"/>
+				<textFieldExpression><![CDATA[$F{o_nationality}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="435" y="0" width="89" height="20" uuid="0ff6ef1d-9c1c-48c6-98c3-2aaab9a8a93e"/>
+				<textFieldExpression><![CDATA[$F{o_telephone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="524" y="0" width="89" height="20" uuid="e156e7a9-439b-4ee0-a0a9-6c31edc99fd0"/>
+				<textFieldExpression><![CDATA[$F{o_p}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="613" y="0" width="89" height="20" uuid="44a9faed-7d67-40ea-b3da-b2e3813798f1"/>
+				<textFieldExpression><![CDATA[$F{o_d}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="702" y="0" width="100" height="20" uuid="ce41cc03-ece9-4e17-9686-ebb73649f52a"/>
+				<textFieldExpression><![CDATA[$F{o_v}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-42" y="0" width="873" height="1" uuid="66e83a6c-b02c-4aa7-ae84-6f9b6af26be5"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
